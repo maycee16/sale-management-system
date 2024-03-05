@@ -10,7 +10,7 @@ quantity_sold=Column(integer, nullable=False)
 revenue=Column(float, nullable=False)
 closing_stock=Column(float, nullable=False)
 def calculate_revenue(self):
-    return self.quantity_sold * self.revenu
+    return self.quantity_sold * self.revenue
 def calculate_closing_stock(self):
      return float(self.opening_stock) - self.quantity_sold
  
