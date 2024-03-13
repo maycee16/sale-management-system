@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Sales Management System</title>
+</head>
+<body>
+    <h1>Sales Management System</h1>
+       <ul>
+
+    <h2>Add Sales Lead</h2>
+    <form method="post" action="{{ url_for('add_sales_lead') }}">
+        <label for="lead_name">Lead Name:</label>
+        <input type="text" name="lead_name" required>
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" name="contact_number">
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <button type="submit">Add Sales Lead</button>
+    </form>
+
+    <h2>Add Customer</h2>
+    <form method="post" action="{{ url_for('add_customer') }}">
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" name="customer_name" required>
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" name="contact_number">
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <button type="submit">Add Customer</button>
+    </form>
+</body>
+</html>
